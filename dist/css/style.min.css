@@ -385,3 +385,111 @@ body {
   transition: 250ms linear;
   fill: #ffffff;
 }
+
+.hero {
+  padding-top: 180px;
+  padding-bottom: 358px;
+  background-color: #ccc;
+  background-image: url(img/hero-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-top {
+  text-align: center;
+  margin-bottom: 86px;
+}
+.hero-top__title {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+.hero-top__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.18;
+  max-width: 439px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.hero-bottom__before {
+  display: inline-block;
+  padding: 14px 73px;
+  max-width: 199px;
+  background-color: #6ecb9e;
+  color: #000000;
+}
+.hero-bottom__after {
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  padding: 14px 46px 14px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row-reverse;
+}
+
+.service {
+  padding-top: 74px;
+  padding-bottom: 92px;
+  background-color: rgba(110, 203, 158, 0.1);
+}
+
+.service-top {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.service-top__title {
+  margin-bottom: 18px;
+}
+.service-top__text {
+  font-weight: 400;
+  max-width: 355px;
+  margin: 0 auto;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.service-list__item {
+  max-width: 200px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 32px 21px;
+  background-color: #ffffff;
+}
+.service-list__top {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #6ecb9e;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-list__bottom {
+  text-align: center;
+}
+.service-list__title {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 20px;
+}

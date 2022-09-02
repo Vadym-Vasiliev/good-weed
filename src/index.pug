@@ -3,6 +3,53 @@ html
   body 
     include html/header
     main
+      //- HERO
+      section.hero
+        .container
+          .hero-content
+            .hero-top
+              h1.hero-top__title Cannabis Also Know As GoodWeed Among Names
+              p.hero-top__text We are a Cannabis Dispensary – Family Owned & Opereated The major goal of family medicine is to build trust between the
+            .hero-bottom
+              a.btn.hero-bottom__before(href="#") Explore
+              a.btn.hero-bottom__after(href="#") Intro video
+                svg.hero-bottom__arrow(width="17" height="19")
+                  use(href="img/icons/icons.svg#hero-arrow") 
+      //- SERVICE
+      section.service
+        .container
+          .service-top
+            h2.title.service-top__title Our services
+            p.service-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          ul.service-list
+            li.service-list__item
+              .service-list__top
+                svg.service-list__svg(width="46" height="65")
+                  use(href="img/icons/icons.svg#service-1")
+              .service-list__bottom
+                h3.title.service-list__title Quality
+                p.service-list__text Lorem ipsum dolor sit amet, consectetur
+            li.service-list__item
+              .service-list__top
+                svg.service-list__svg(width="70" height="49")
+                  use(href="img/icons/icons.svg#service-2")
+              .service-list__bottom
+                h3.title.service-list__title Delivery
+                p.service-list__text Lorem ipsum dolor sit amet, consectetur
+            li.service-list__item
+              .service-list__top
+                svg.service-list__svg(width="52" height="55")
+                  use(href="img/icons/icons.svg#service-3")
+              .service-list__bottom
+                h3.title.service-list__title Natural
+                p.service-list__text Lorem ipsum dolor sit amet, consectetur
+            li.service-list__item
+              .service-list__top
+                svg.service-list__svg(width="60" height="60")
+                  use(href="img/icons/icons.svg#service-4")
+              .service-list__bottom
+                h3.title.service-list__title Trusted 
+                p.service-list__text Lorem ipsum dolor sit amet, consectetur 
     include html/footer
     script(src="js/app.min.js")
 
