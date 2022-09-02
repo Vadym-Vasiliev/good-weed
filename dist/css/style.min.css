@@ -276,3 +276,7 @@ image {
   width: 100%;
   height: auto;
 }
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
