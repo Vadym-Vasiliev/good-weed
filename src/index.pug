@@ -19,7 +19,7 @@ html
       section.service
         .container
           .service-top
-            h2.title.service-top__title Our services
+            h2.title Our services
             p.service-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           ul.service-list
             li.service-list__item
@@ -50,6 +50,25 @@ html
               .service-list__bottom
                 h3.title.service-list__title Trusted 
                 p.service-list__text Lorem ipsum dolor sit amet, consectetur 
+      //- GALLERY
+      section.gallery
+        .gallery-top
+          h2.title.gallery-top__title Our Photo <span class="gallery-top__span">Gallery</span>
+          p.gallery-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .gallery-bottom
+          .gallery-bottom__wrap
+            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
+            .gallery-bottom__center
+              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+          .gallery-bottom__wrap
+            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
+            .gallery-bottom__center
+              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
+              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
+            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+
     include html/footer
     script(src="js/app.min.js")
 

@@ -1,0 +1,44 @@
+.gallery {
+  padding-top: 74px;
+  padding-bottom: 167px;
+
+  overflow: hidden;
+}
+
+.gallery-top {
+  text-align: center;
+  margin-bottom: 48px;
+  &__span {
+    color: $green;
+  }
+
+  &__text {
+    max-width: 355px;
+    margin: 0 auto;
+  }
+}
+
+.gallery-bottom {
+  display: flex;
+  gap: 4px;
+
+  &__wrap {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__img {
+    &--big {
+      width: 400px;
+    }
+    &--small {
+      width: 198px;
+    }
+  }
+}
