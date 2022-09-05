@@ -271,7 +271,7 @@ a {
   text-decoration: none;
 }
 
-image {
+img {
   display: block;
   width: 100%;
   height: auto;
@@ -319,6 +319,15 @@ body {
 }
 .title--color {
   color: #6ecb9e;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  max-width: 355px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -453,11 +462,6 @@ body {
   margin-bottom: 48px;
   text-align: center;
 }
-.service-top__text {
-  font-weight: 400;
-  max-width: 355px;
-  margin: 0 auto;
-}
 
 .service-list {
   display: flex;
@@ -504,10 +508,6 @@ body {
 .gallery-top {
   text-align: center;
   margin-bottom: 48px;
-}
-.gallery-top__text {
-  max-width: 355px;
-  margin: 0 auto;
 }
 
 .gallery-bottom {
@@ -706,12 +706,6 @@ body {
   text-align: center;
 }
 .products-top__text {
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  max-width: 355px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 48px;
 }
 .products-top__list {
@@ -825,4 +819,127 @@ body {
   line-height: 1.18;
   text-align: center;
   color: #ffffff;
+}
+
+.update {
+  padding-top: 111px;
+  padding-bottom: 155px;
+}
+
+.update-top {
+  margin-bottom: 58px;
+}
+.update-top__title {
+  text-align: center;
+}
+
+.update-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.update-list__item {
+  max-width: 274px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+.update-list__img {
+  width: 274px;
+  border-radius: 10px 10px 0 0;
+}
+.update-list__top {
+  padding: 10px 0;
+  background-color: #6ecb9e;
+}
+.update-list__date {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  min-width: 121px;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+}
+.update-list__bottom {
+  padding: 24px;
+  text-align: center;
+}
+.update-list__title {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 24px;
+}
+.update-list__text {
+  font-weight: 400;
+  font-size: 14px;
+}
+.update-list__dots {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #000000;
+}
+.update-list__dots::before, .update-list__dots::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #000000;
+}
+.update-list__dots::after {
+  margin-left: -10px;
+}
+
+.produce {
+  padding-bottom: 138px;
+}
+
+.produce-top {
+  margin-bottom: 61px;
+}
+.produce-top__title {
+  text-align: center;
+}
+
+.produce-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.produce-list__item {
+  padding: 24px 10px;
+  max-width: 200px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+.produce-list__img {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+.produce-list__content {
+  margin-top: 18px;
+}
+.produce-list__title {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 20px;
+  text-align: center;
 }
