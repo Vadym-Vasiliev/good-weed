@@ -39,4 +39,8 @@ body {
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 18px;
+
+  &--color {
+    color: $green;
+  }
 }

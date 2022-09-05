@@ -1,0 +1,126 @@
+.products {
+  padding-bottom: 142px;
+
+  &__store {
+    padding: 14px 66px;
+    border: 1px solid $yellow;
+    display: table;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: $yellow;
+  }
+}
+
+.products-top {
+  margin-bottom: 73px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    max-width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__item {
+    max-width: 200px;
+  }
+
+  &__btn {
+    padding: 14px 80px;
+    border: 1px solid $yellow;
+    transition: 250ms linear;
+    color: $yellow;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $yellow;
+    }
+  }
+}
+
+.products-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 71px;
+
+  &__item {
+    width: 200px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04),
+      0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+  }
+
+  &__img {
+    width: 156px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__abbr {
+    font-family: $zilla-font;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.21;
+    margin-bottom: 2px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 12px;
+  }
+
+  &__proc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    display: block;
+    margin-bottom: 46px;
+
+    &--margin {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    margin-bottom: 35px;
+    transition: 250ms linear;
+
+    color: $yellow;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $yellow;
+    }
+  }
+}

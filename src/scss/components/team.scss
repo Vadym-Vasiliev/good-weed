@@ -1,0 +1,41 @@
+.team {
+  padding-top: 27px;
+  padding-bottom: 46px;
+
+  background-color: $green-light;
+
+  &__title {
+    margin-bottom: 31px;
+    text-align: center;
+  }
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  &__item {
+    max-width: 270px;
+  }
+
+  &__img {
+    width: 270px;
+  }
+
+  &__content {
+    padding: 8px 0;
+    background-color: $green;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+
+    color: $white;
+  }
+}

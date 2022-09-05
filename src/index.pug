@@ -53,7 +53,7 @@ html
       //- GALLERY
       section.gallery
         .gallery-top
-          h2.title.gallery-top__title Our Photo <span class="gallery-top__span">Gallery</span>
+          h2.title.gallery-top__title Our Photo <span class="title--color">Gallery</span>
           p.gallery-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua.
         .gallery-bottom
           .gallery-bottom__wrap
@@ -72,7 +72,7 @@ html
       section.guide
         .container
           .guide-top
-            h2.title.guide-top__title The Guide Is To Familiarize You <span class="guide-top__span-color">With GoodWeed</span>
+            h2.title.guide-top__title The Guide Is To Familiarize You <span class="title--color">With GoodWeed</span>
             ul.guide-list
               li.guide-list__item
                 label.guide-list__label(for="radio-1")
@@ -142,6 +142,70 @@ html
                     .guide-list-item-right__span-avability Avability: <span class="guide-list-item-right__span-avability--color">Instock</span>
                     .guide-list-item-right__span-price Price: <span class="guide-list-item-right__span-price--color">&#36 45</span>
                   button.btn.guide-list-item-right__btn(type="button") Add to Cart
+      //- PRODUCTS
+      section.products
+        .container
+          .products-top
+            h2.title.products-top__title Our <span class="title--color">products</span>
+            p.products-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            ul.products-top__list
+              li.products-top__item
+                button.btn.products-top__btn(type="button") Hybrid
+              li.products-top__item
+                button.btn.products-top__btn(type="button") Indica
+              li.products-top__item
+                button.btn.products-top__btn(type="button") Sativa
+          ul.products-list
+            li.products-list__item
+              img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
+              .products-list__content
+                span.products-list__abbr MB
+                p.products-list__text Mad Blast
+                span.products-list__proc.products-list__proc--margin CBD :  80 %
+                span.products-list__proc THC :  90 %
+              button.btn.products-list__btn(type="button") Add to Cart
+            li.products-list__item
+              img.products-list__img(src="img/products-3.png", alt="cannabis")
+              .products-list__content
+                span.products-list__abbr LB
+                p.products-list__text Little Bloom
+                span.products-list__proc.products-list__proc--margin CBD :  70 %
+                span.products-list__proc THC :  80 %
+              button.btn.products-list__btn(type="button") Add to Cart
+            li.products-list__item
+              img.products-list__img(src="img/products-3.png", alt="cannabis")
+              .products-list__content
+                span.products-list__abbr MT
+                p.products-list__text Mix Tim
+                span.products-list__proc.products-list__proc--margin CBD :  50 %
+                span.products-list__proc THC :  99 %
+              button.btn.products-list__btn(type="button") Add to Cart
+            li.products-list__item
+              img.products-list__img(src="img/products-3.png", alt="cannabis")
+              .products-list__content
+                span.products-list__abbr SD
+                p.products-list__text Sour Diesel
+                span.products-list__proc.products-list__proc--margin CBD :  90 %
+                span.products-list__proc THC :  30 %
+              button.btn.products-list__btn(type="button") Add to Cart
+          a.btn.products__store(href="#") Visit store
+      //- TEAM
+      section.team
+        .container
+          h2.title.team__title Meet Our CBD Specialists
+          ul.team-list
+            li.team-list__item
+              img.team-list__img(src="img/team-1.jpg", alt="girl")
+              .team-list__content
+                p.team-list__text Mia Brown 
+            li.team-list__item
+              img.team-list__img(src="img/team-2.jpg", alt="girl")
+              .team-list__content
+                p.team-list__text Oliver Johnson 
+            li.team-list__item
+              img.team-list__img(src="img/team-3.jpg", alt="girl")
+              .team-list__content
+                p.team-list__text James Smith 
     include html/footer
     script(src="js/app.min.js")
 
