@@ -529,3 +529,162 @@ body {
 .gallery-bottom__img--small {
   width: 198px;
 }
+
+.guide {
+  padding-bottom: 118px;
+}
+
+.guide-top {
+  margin-bottom: 36px;
+}
+.guide-top__title {
+  text-align: center;
+  max-width: 587px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+.guide-top__span-color {
+  color: #6ecb9e;
+}
+
+.guide-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.guide-list__item {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.guide-list__content {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #6ecb9e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.guide-list__label {
+  cursor: pointer;
+}
+.guide-list__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.guide-list__input:checked ~ .guide-list__content {
+  color: #ffffff;
+  background-color: #ffb800;
+  border-color: #ffb800;
+}
+.guide-list__input:checked ~ .guide-list__content .guide-list__top {
+  color: #ffffff;
+}
+.guide-list__top {
+  font-weight: 700;
+  color: #6ecb9e;
+}
+.guide-list__span {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+.guide-list__bottom {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  max-width: 43px;
+  margin: 0 auto;
+}
+
+.guide-list-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.guide-list-bottom__item {
+  width: 872px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+}
+.guide-list-bottom__img {
+  width: 297px;
+}
+
+.guide-list-item-right__top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 6px;
+}
+.guide-list-item-right__review--color {
+  color: #6ecb9e;
+}
+.guide-list-item-right__content-top {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 18px;
+}
+.guide-list-item-right__title {
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.19;
+}
+.guide-list-item-right__circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6ecb9e;
+}
+.guide-list-item-right__text {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+}
+.guide-list-item-right__text-content {
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 389px;
+  margin-bottom: 12px;
+}
+.guide-list-item-right__content-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+.guide-list-item-right__span-avability--color {
+  color: #6ecb9e;
+}
+.guide-list-item-right__span-price--color {
+  color: #6ecb9e;
+}
+.guide-list-item-right__btn {
+  padding: 14px 57px;
+  color: #ffffff;
+  color: #ffffff;
+  background-color: #ffb800;
+}

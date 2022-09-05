@@ -68,7 +68,80 @@ html
               img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
               img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
             img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
-
+      //- GUIDE
+      section.guide
+        .container
+          .guide-top
+            h2.title.guide-top__title The Guide Is To Familiarize You <span class="guide-top__span-color">With GoodWeed</span>
+            ul.guide-list
+              li.guide-list__item
+                label.guide-list__label(for="radio-1")
+                  input.guide-list__input(type="radio" name="radio-btn" id="radio-1" checked)
+                  .guide-list__content
+                    p.guide-list__top Oils
+                    span.guide-list__span FF
+                    p.guide-list__bottom Florida’s Finest
+              li.guide-list__item
+                label.guide-list__label(for="radio-2")
+                  input.guide-list__input(type="radio" name="radio-btn" id="radio-2" checked)
+                  .guide-list__content
+                    p.guide-list__top Buds
+                    span.guide-list__span LB
+                    p.guide-list__bottom Little Bloom
+              li.guide-list__item
+                label.guide-list__label(for="radio-3")
+                  input.guide-list__input(type="radio" name="radio-btn" id="radio-3" checked)
+                  .guide-list__content
+                    p.guide-list__top Oils
+                    span.guide-list__span MB
+                    p.guide-list__bottom Mad Blast
+              li.guide-list__item
+                label.guide-list__label(for="radio-4")
+                  input.guide-list__input(type="radio" name="radio-btn" id="radio-4" checked)
+                  .guide-list__content
+                    p.guide-list__top Hybrid
+                    span.guide-list__span MT
+                    p.guide-list__bottom Mix Tim
+              li.guide-list__item
+                label.guide-list__label(for="radio-5")
+                  input.guide-list__input(type="radio" name="radio-btn" id="radio-5" checked)
+                  .guide-list__content
+                    p.guide-list__top Edibles
+                    span.guide-list__span SD
+                    p.guide-list__bottom Sour Diesel
+          .guide-bottom
+            ul.guide-list-bottom
+              li.guide-list-bottom__item  
+                img.guide-list-bottom__img(src="img/guide-cannabis.png", alt="cannabis")
+                .guide-list-item-right
+                  .guide-list-item-right__top
+                    .guide-list-item-right__images  
+                      span.guide-list-item-right__span
+                        svg(width="14" height="16")
+                          use(href="img/icons/icons.svg#guide-cannabis")
+                      span.guide-list-item-right__span
+                        svg(width="14" height="16")
+                          use(href="img/icons/icons.svg#guide-cannabis")
+                      span.guide-list-item-right__span
+                        svg(width="14" height="16")
+                          use(href="img/icons/icons.svg#guide-cannabis")
+                      span.guide-list-item-right__span
+                        svg(width="14" height="16")
+                          use(href="img/icons/icons.svg#guide-cannabis")
+                      span.guide-list-item-right__span
+                        svg(width="14" height="16")
+                          use(href="img/icons/icons.svg#guide-cannabis")
+                    .guide-list-item-right__review 5.00 <span class="guide-list-item-right__review--color">(3 reviews)</span>
+                  .guide-list-item-right__content-top
+                    h3.guide-list-item-right__title Mad Blast
+                    .guide-list-item-right__circle
+                      span.guide-list-item-right__text MT
+                  .guide-list-item-right__content-bottom
+                    p.guide-list-item-right__text-content We are a Cannabis Dispensary – Family Owned & Opereated The major goal of family medicine is to build trust between the patient and the general paractitioner, which allow ahieving the best treatement outcome.
+                  .guide-list-item-right__content-price
+                    .guide-list-item-right__span-avability Avability: <span class="guide-list-item-right__span-avability--color">Instock</span>
+                    .guide-list-item-right__span-price Price: <span class="guide-list-item-right__span-price--color">&#36 45</span>
+                  button.btn.guide-list-item-right__btn(type="button") Add to Cart
     include html/footer
     script(src="js/app.min.js")
 
