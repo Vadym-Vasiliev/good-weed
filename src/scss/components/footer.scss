@@ -1,0 +1,58 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: $black;
+  }
+
+  &__logo {
+    fill: $black;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 35px;
+  }
+  &__soc {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 250ms linear;
+    border-radius: 50%;
+
+    background-color: rgba(204, 204, 204, 0.162);
+
+    &:hover,
+    &:focus {
+      background-color: $green;
+      transform: scale(1.2);
+
+      .footer-top__svg {
+        fill: $white;
+      }
+    }
+  }
+
+  &__svg {
+    transition: 250ms linear;
+    fill: $black;
+  }
+}
+
+.footer-form {
+  margin-left: 100px;
+  display: none;
+}

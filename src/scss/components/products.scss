@@ -1,5 +1,5 @@
 .products {
-  padding-bottom: 142px;
+  padding-bottom: 100px;
 
   &__store {
     padding: 14px 66px;
@@ -8,8 +8,13 @@
     min-width: 200px;
     margin-left: auto;
     margin-right: auto;
+    display: none;
 
     color: $yellow;
+  }
+
+  & button {
+    display: none;
   }
 }
 
@@ -29,6 +34,7 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
+    display: none;
   }
 
   &__item {
@@ -41,7 +47,6 @@
     transition: 250ms linear;
     color: $yellow;
 
-    &:hover,
     &:focus {
       color: $white;
       background-color: $yellow;
@@ -51,11 +56,9 @@
 
 .products-list {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 71px;
 
   &__item {
     width: 200px;
@@ -73,6 +76,7 @@
 
   &__content {
     text-align: center;
+    padding: 20px;
   }
 
   &__abbr {
@@ -80,7 +84,8 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 1.21;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
+    display: block;
   }
 
   &__text {
@@ -90,16 +95,10 @@
     margin-bottom: 12px;
   }
 
-  &__proc {
+  &__price {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
-    display: block;
-    margin-bottom: 46px;
-
-    &--margin {
-      margin-bottom: 2px;
-    }
   }
 
   &__btn {

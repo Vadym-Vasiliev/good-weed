@@ -7,36 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&amp;family=Urbanist:wght@300;400;500;600;700&amp;family=Zilla+Slab:wght@700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css"/>
     <title>GOOD WEED</title>
   </head>
   <body> 
     <header class="header">
       <div class="container-header">
-        <div class="header-content"><a class="header-content__link" href="#"> 
+        <div class="header-content"><a class="logo header-content__link" href="#"> 
             <svg class="header-content__logo" width="40" height="45">
               <use href="img/icons/icons.svg#header-logo"></use>
             </svg><span>GOOD WEED</span></a>
           <ul class="header-list">
-            <li class="header-list__item"><a class="header-list__link" href="#">Нome</a></li>
-            <li class="header-list__item"><a class="header-list__link" href="#">Blog</a></li>
-            <li class="header-list__item"><a class="header-list__link" href="#">About Us </a></li>
-            <li class="header-list__item"><a class="header-list__link" href="#">Products</a></li>
-            <li class="header-list__item"><a class="header-list__link" href="#">Pages</a></li>
-            <li class="header-list__item"><a class="header-list__link" href="#">Contact Us</a></li>
+            <li class="header-list__item"><a class="header-list__link" href="#main">Нome</a></li>
+            <li class="header-list__item"><a class="header-list__link" href="#services">Services</a></li>
+            <li class="header-list__item"><a class="header-list__link" href="#gallery">Gallery</a></li>
+            <li class="header-list__item"><a class="header-list__link" href="#products">Products</a></li>
+            <li class="header-list__item"><a class="header-list__link" href="#footer">Contact Us</a></li>
           </ul>
           <div class="header-right"><a class="header-right__link" href="#"> 
               <svg class="header-right__svg" width="19" height="17">
                 <use href="img/icons/icons.svg#header-basket"></use>
-              </svg></a><a class="header-right__link" href="#"> 
-              <svg class="header-right__svg" width="17" height="14">
-                <use href="img/icons/icons.svg#header-heart"></use>
               </svg></a></div>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="main">
         <div class="container">
           <div class="hero-content">
             <div class="hero-top">
@@ -50,7 +47,7 @@
           </div>
         </div>
       </section>
-      <section class="service">
+      <section class="service" id="services">
         <div class="container">
           <div class="service-top">
             <h2 class="title">Our services</h2>
@@ -104,17 +101,30 @@
           </ul>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery-top">
           <h2 class="title gallery-top__title">Our Photo <span class="title--color">Gallery</span></h2>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="gallery-bottom">
-          <div class="gallery-bottom__wrap"><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-1.jpg" alt="the girl smokes"/>
-            <div class="gallery-bottom__center"><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-2.jpg" alt="cannabis"/><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-3.jpg" alt="cannabis"/></div><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-4.jpg" alt="cannabis"/>
+        <div class="gallery-bottom-slider">
+          <div class="gallery-bottom"> 
+            <div class="gallery-bottom__wrap"><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-1.jpg" alt="the girl smokes"/>
+              <div class="gallery-bottom__center"><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-2.jpg" alt="cannabis"/><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-3.jpg" alt="cannabis"/></div><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-4.jpg" alt="cannabis"/>
+            </div>
+            <div class="gallery-bottom__wrap"><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-5.jpg" alt="the man smokes"/>
+              <div class="gallery-bottom__center"><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-6.jpg" alt="cannabis"/><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-7.jpg" alt="cannabis"/></div><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-8.jpg" alt="cannabis"/>
+            </div>
           </div>
-          <div class="gallery-bottom__wrap"><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-5.jpg" alt="the man smokes"/>
-            <div class="gallery-bottom__center"><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-6.jpg" alt="cannabis"/><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-7.jpg" alt="cannabis"/></div><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-8.jpg" alt="cannabis"/>
+          <div class="gallery-bottom"> 
+            <div class="gallery-bottom__wrap"><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-1.jpg" alt="the girl smokes"/>
+              <div class="gallery-bottom__center"><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-2.jpg" alt="cannabis"/><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-3.jpg" alt="cannabis"/></div><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-4.jpg" alt="cannabis"/>
+            </div>
+            <div class="gallery-bottom__wrap"><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-5.jpg" alt="the man smokes"/>
+              <div class="gallery-bottom__center"><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-6.jpg" alt="cannabis"/><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-7.jpg" alt="cannabis"/></div><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-8.jpg" alt="cannabis"/>
+            </div>
+            <div class="gallery-bottom__wrap"><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-4.jpg" alt="cannabis"/>
+              <div class="gallery-bottom__center"><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-2.jpg" alt="cannabis"/><img class="gallery-bottom__img gallery-bottom__img--small" src="img/gallery-3.jpg" alt="cannabis"/></div><img class="gallery-bottom__img gallery-bottom__img--big" src="img/gallery-1.jpg" alt="the girl smokes"/>
+            </div>
           </div>
         </div>
       </section>
@@ -211,7 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <div class="products-top">
             <h2 class="title products-top__title">Our <span class="title--color">products</span></h2>
@@ -230,26 +240,34 @@
           </div>
           <ul class="products-list">
             <li class="products-list__item"><img class="products-list__img products-list__img--width" src="img/products-3.png" alt="cannabis"/>
-              <div class="products-list__content"><span class="products-list__abbr">MB</span>
-                <p class="products-list__text">Mad Blast</p><span class="products-list__proc products-list__proc--margin">CBD :  80 %</span><span class="products-list__proc">THC :  90 %</span>
+              <div class="products-list__content">
+                <p class="products-list__abbr">MB</p>
+                <p class="products-list__text">Mad Blast</p>
+                <p class="products-list__price">price: 999</p>
               </div>
               <button class="btn products-list__btn" type="button">Add to Cart</button>
             </li>
             <li class="products-list__item"><img class="products-list__img" src="img/products-3.png" alt="cannabis"/>
-              <div class="products-list__content"><span class="products-list__abbr">LB</span>
-                <p class="products-list__text">Little Bloom</p><span class="products-list__proc products-list__proc--margin">CBD :  70 %</span><span class="products-list__proc">THC :  80 %</span>
+              <div class="products-list__content">
+                <p class="products-list__abbr">LB</p>
+                <p class="products-list__text">Little Bloom</p>
+                <p class="products-list__price">price: 999</p>
               </div>
               <button class="btn products-list__btn" type="button">Add to Cart</button>
             </li>
             <li class="products-list__item"><img class="products-list__img" src="img/products-3.png" alt="cannabis"/>
-              <div class="products-list__content"><span class="products-list__abbr">MT</span>
-                <p class="products-list__text">Mix Tim</p><span class="products-list__proc products-list__proc--margin">CBD :  50 %</span><span class="products-list__proc">THC :  99 %</span>
+              <div class="products-list__content">
+                <p class="products-list__abbr">MT</p>
+                <p class="products-list__text">Mix Tim</p>
+                <p class="products-list__price">price: 999</p>
               </div>
               <button class="btn products-list__btn" type="button">Add to Cart</button>
             </li>
             <li class="products-list__item"><img class="products-list__img" src="img/products-3.png" alt="cannabis"/>
-              <div class="products-list__content"><span class="products-list__abbr">SD</span>
-                <p class="products-list__text">Sour Diesel</p><span class="products-list__proc products-list__proc--margin">CBD :  90 %</span><span class="products-list__proc">THC :  30 %</span>
+              <div class="products-list__content">
+                <p class="products-list__abbr">SD</p>
+                <p class="products-list__text">Sour Diesel</p>
+                <p class="products-list__price">price: 999</p>
               </div>
               <button class="btn products-list__btn" type="button">Add to Cart</button>
             </li>
@@ -344,6 +362,46 @@
         </div>
       </section>
     </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-top"><a class="logo footer-top__link" href="#main">
+            <svg class="footer-top__logo" width="40" height="45">
+              <use href="img/icons/icons.svg#header-logo"></use>
+            </svg><span>GOOD WEED</span></a>
+          <form class="footer-form">
+            <label class="footer-form__label" for="email"> 
+              <svg class="footer-form__svg" width="11" height="9"> 
+                <use href="img/icons/icons.svg#footer-mail"></use>
+              </svg>
+              <input class="footer-form__input" name="email" type="email" id="email" placeholder="Your email address"/>
+            </label>
+            <button class="footer-form__btn" type="submit">SUBMIT</button>
+          </form>
+          <ul class="footer-top__list">
+            <li class="footer-top__item"><a class="footer-top__soc" href="#"> 
+                <svg class="footer-top__svg" width="15" height="15">
+                  <use href="img/icons/icons.svg#instagram"></use>
+                </svg></a></li>
+            <li class="footer-top__item"><a class="footer-top__soc" href="#"> 
+                <svg class="footer-top__svg" width="15" height="15">
+                  <use href="img/icons/icons.svg#facebook"></use>
+                </svg></a></li>
+            <li class="footer-top__item"><a class="footer-top__soc" href="#"> 
+                <svg class="footer-top__svg" width="15" height="15">
+                  <use href="img/icons/icons.svg#twitter"></use>
+                </svg></a></li>
+            <li class="footer-top__item"><a class="footer-top__soc" href="#"> 
+                <svg class="footer-top__svg" width="15" height="15">
+                  <use href="img/icons/icons.svg#youtube"></use>
+                </svg></a></li>
+            <li class="footer-top__item"><a class="footer-top__soc" href="#"> 
+                <svg class="footer-top__svg" width="15" height="15">
+                  <use href="img/icons/icons.svg#linkedin"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="js/app.min.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@ html
     include html/header
     main
       //- HERO
-      section.hero
+      section.hero(id="main")
         .container
           .hero-content
             .hero-top
@@ -16,7 +16,7 @@ html
                 svg.hero-bottom__arrow(width="17" height="19")
                   use(href="img/icons/icons.svg#hero-arrow") 
       //- SERVICE
-      section.service
+      section.service(id="services")
         .container
           .service-top
             h2.title Our services
@@ -51,23 +51,43 @@ html
                 h3.title.service-list__title Trusted 
                 p.service-list__text Lorem ipsum dolor sit amet, consectetur 
       //- GALLERY
-      section.gallery
+      section.gallery(id="gallery")
         .gallery-top
           h2.title.gallery-top__title Our Photo <span class="title--color">Gallery</span>
           p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        .gallery-bottom
-          .gallery-bottom__wrap
-            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
-            .gallery-bottom__center
-              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
-              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
-            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
-          .gallery-bottom__wrap
-            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
-            .gallery-bottom__center
-              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
-              img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
-            img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+        .gallery-bottom-slider
+          .gallery-bottom 
+            .gallery-bottom__wrap
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
+              .gallery-bottom__center
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+            .gallery-bottom__wrap
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
+              .gallery-bottom__center
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+          .gallery-bottom 
+            .gallery-bottom__wrap
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
+              .gallery-bottom__center
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+            .gallery-bottom__wrap
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
+              .gallery-bottom__center
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+            .gallery-bottom__wrap
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+              .gallery-bottom__center
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+                img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+              img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
       //- GUIDE
       section.guide
         .container
@@ -143,7 +163,7 @@ html
                     .guide-list-item-right__span-price Price: <span class="guide-list-item-right__span-price--color">&#36 45</span>
                   button.btn.guide-list-item-right__btn(type="button") Add to Cart
       //- PRODUCTS
-      section.products
+      section.products(id="products")
         .container
           .products-top
             h2.title.products-top__title Our <span class="title--color">products</span>
@@ -159,34 +179,30 @@ html
             li.products-list__item
               img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
               .products-list__content
-                span.products-list__abbr MB
+                p.products-list__abbr MB
                 p.products-list__text Mad Blast
-                span.products-list__proc.products-list__proc--margin CBD :  80 %
-                span.products-list__proc THC :  90 %
+                p.products-list__price price: 999
               button.btn.products-list__btn(type="button") Add to Cart
             li.products-list__item
               img.products-list__img(src="img/products-3.png", alt="cannabis")
               .products-list__content
-                span.products-list__abbr LB
+                p.products-list__abbr LB
                 p.products-list__text Little Bloom
-                span.products-list__proc.products-list__proc--margin CBD :  70 %
-                span.products-list__proc THC :  80 %
+                p.products-list__price price: 999
               button.btn.products-list__btn(type="button") Add to Cart
             li.products-list__item
               img.products-list__img(src="img/products-3.png", alt="cannabis")
               .products-list__content
-                span.products-list__abbr MT
+                p.products-list__abbr MT
                 p.products-list__text Mix Tim
-                span.products-list__proc.products-list__proc--margin CBD :  50 %
-                span.products-list__proc THC :  99 %
+                p.products-list__price price: 999
               button.btn.products-list__btn(type="button") Add to Cart
             li.products-list__item
               img.products-list__img(src="img/products-3.png", alt="cannabis")
               .products-list__content
-                span.products-list__abbr SD
+                p.products-list__abbr SD
                 p.products-list__text Sour Diesel
-                span.products-list__proc.products-list__proc--margin CBD :  90 %
-                span.products-list__proc THC :  30 %
+                p.products-list__price price: 999
               button.btn.products-list__btn(type="button") Add to Cart
           a.btn.products__store(href="#") Visit store
       //- TEAM
