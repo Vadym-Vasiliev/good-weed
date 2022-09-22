@@ -692,10 +692,20 @@ body.header-menu-open {
   padding-bottom: 92px;
   background-color: rgba(110, 203, 158, 0.1);
 }
+@media screen and (max-width: 480px) {
+  .service {
+    padding-bottom: 50px;
+  }
+}
 
 .service-top {
   margin-bottom: 48px;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .service-top__text {
+    font-size: 18px;
+  }
 }
 
 .service-list {
@@ -711,6 +721,11 @@ body.header-menu-open {
   border-radius: 10px;
   padding: 32px 21px;
   background-color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  .service-list__item {
+    max-width: 280px;
+  }
 }
 .service-list__top {
   width: 120px;
@@ -732,6 +747,23 @@ body.header-menu-open {
   font-size: 18px;
   line-height: 1.22;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  .service-list__title {
+    font-size: 28px;
+  }
+}
+.service-list__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: #000000;
+}
+@media screen and (max-width: 480px) {
+  .service-list__text {
+    font-size: 18px;
+  }
 }
 
 .gallery {
