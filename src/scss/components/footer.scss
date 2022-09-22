@@ -2,7 +2,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  // background-color: $green;
+  background-color: $green;
 }
 
 .footer > .container {
@@ -14,6 +14,7 @@
 .footer-top {
   display: flex;
   align-items: center;
+
   &__link {
     display: flex;
     align-items: center;
@@ -100,7 +101,7 @@
 
     &:hover,
     &:focus {
-      color: $green;
+      color: $white;
       transform: scale(1.05);
     }
   }
