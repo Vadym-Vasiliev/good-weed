@@ -510,7 +510,7 @@ body {
   padding-top: 250px;
   padding-bottom: 200px;
   background-color: #ccc;
-  background-image: url(../../img/hero-main.png);
+  background-image: url(../img/hero-main.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -631,8 +631,11 @@ body {
   flex-direction: column;
   gap: 4px;
 }
+.gallery-bottom__img {
+  object-fit: cover;
+}
 .gallery-bottom__img--big {
-  width: 400px;
+  width: 375px;
 }
 .gallery-bottom__img--small {
   width: 198px;

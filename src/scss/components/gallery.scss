@@ -27,8 +27,9 @@
   }
 
   &__img {
+    object-fit: cover;
     &--big {
-      width: 400px;
+      width: 375px;
     }
     &--small {
       width: 198px;
