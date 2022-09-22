@@ -542,7 +542,7 @@ body.header-menu-open {
     height: 100%;
     display: block;
     z-index: 5;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #000000;
   }
   .header-menu--open .header-list {
     flex-direction: column;
@@ -643,6 +643,12 @@ body.header-menu-open {
   background-size: cover;
   background-position: center;
 }
+@media screen and (max-width: 480px) {
+  .hero {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}
 
 .hero-top {
   text-align: center;
@@ -654,6 +660,11 @@ body.header-menu-open {
   margin-bottom: 32px;
   color: #ffffff;
 }
+@media screen and (max-width: 480px) {
+  .hero-top__title {
+    font-size: 50px;
+  }
+}
 .hero-top__text {
   font-weight: 300;
   font-size: 16px;
@@ -661,6 +672,11 @@ body.header-menu-open {
   max-width: 439px;
   margin: 0 auto;
   color: #ffffff;
+}
+@media screen and (max-width: 480px) {
+  .hero-top__text {
+    font-size: 18px;
+  }
 }
 
 .hero-bottom {
