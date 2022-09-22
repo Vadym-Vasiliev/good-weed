@@ -1,338 +1,339 @@
 html 
   include html/head 
   body 
-    include html/header
-    main
-      //- HERO
-      //- section.hero(id="main")
-      //-   .container
-      //-     .hero-content
-      //-       .hero-top
-      //-         h1.hero-top__title Cannabis Also Know As GoodWeed Among Names
-      //-         p.hero-top__text We are a Cannabis Dispensary – Family Owned & Opereated The major goal of family medicine is to build trust between the
-      //-       .hero-bottom
-      //-         a.btn.hero-bottom__before(href="#") Explore
-      //-         a.btn.hero-bottom__after(href="#") Intro video
-      //-           svg.hero-bottom__arrow(width="17" height="19")
-      //-             use(href="img/icons/icons.svg#hero-arrow") 
-      //- //- SERVICE
-      //- section.service(id="services")
-      //-   .container
-      //-     .service-top
-      //-       h2.title Our services
-      //-       p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      //-     ul.service-list
-      //-       li.service-list__item
-      //-         .service-list__top
-      //-           svg.service-list__svg(width="46" height="65")
-      //-             use(href="img/icons/icons.svg#service-1")
-      //-         .service-list__bottom
-      //-           h3.title.service-list__title Quality
-      //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur
-      //-       li.service-list__item
-      //-         .service-list__top
-      //-           svg.service-list__svg(width="70" height="49")
-      //-             use(href="img/icons/icons.svg#service-2")
-      //-         .service-list__bottom
-      //-           h3.title.service-list__title Delivery
-      //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur
-      //-       li.service-list__item
-      //-         .service-list__top
-      //-           svg.service-list__svg(width="52" height="55")
-      //-             use(href="img/icons/icons.svg#service-3")
-      //-         .service-list__bottom
-      //-           h3.title.service-list__title Natural
-      //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur
-      //-       li.service-list__item
-      //-         .service-list__top
-      //-           svg.service-list__svg(width="60" height="60")
-      //-             use(href="img/icons/icons.svg#service-4")
-      //-         .service-list__bottom
-      //-           h3.title.service-list__title Trusted 
-      //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur 
-      //- //- GALLERY
-      //- section.gallery(id="gallery")
-      //-   .gallery-top
-      //-     h2.title.gallery-top__title Our Photo <span class="title--color">Gallery</span>
-      //-     p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      //-   .gallery-bottom-slider
-      //-     .gallery-bottom 
-      //-       .gallery-bottom__wrap
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
-      //-         .gallery-bottom__center
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
-      //-       .gallery-bottom__wrap
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
-      //-         .gallery-bottom__center
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
-      //-     .gallery-bottom 
-      //-       .gallery-bottom__wrap
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
-      //-         .gallery-bottom__center
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
-      //-       .gallery-bottom__wrap
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
-      //-         .gallery-bottom__center
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
-      //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
-      //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
-      //- //- GUIDE
-      //- section.guide
-      //-   .container
-      //-     .guide-top
-      //-       h2.title.guide-top__title The Guide Is To Familiarize You <span class="title--color">With GoodWeed</span>
-      //-       ul.guide-list
-      //-         li.guide-list__item
-      //-           label.guide-list__label(for="radio-1")
-      //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-1" checked)
-      //-             .guide-list__content
-      //-               p.guide-list__top Oils
-      //-               span.guide-list__span FF
-      //-               p.guide-list__bottom Florida’s Finest
-      //-         li.guide-list__item
-      //-           label.guide-list__label(for="radio-2")
-      //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-2" checked)
-      //-             .guide-list__content
-      //-               p.guide-list__top Buds
-      //-               span.guide-list__span LB
-      //-               p.guide-list__bottom Little Bloom
-      //-         li.guide-list__item
-      //-           label.guide-list__label(for="radio-3")
-      //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-3" checked)
-      //-             .guide-list__content
-      //-               p.guide-list__top Oils
-      //-               span.guide-list__span MB
-      //-               p.guide-list__bottom Mad Blast
-      //-         li.guide-list__item
-      //-           label.guide-list__label(for="radio-4")
-      //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-4" checked)
-      //-             .guide-list__content
-      //-               p.guide-list__top Hybrid
-      //-               span.guide-list__span MT
-      //-               p.guide-list__bottom Mix Tim
-      //-         li.guide-list__item
-      //-           label.guide-list__label(for="radio-5")
-      //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-5" checked)
-      //-             .guide-list__content
-      //-               p.guide-list__top Edibles
-      //-               span.guide-list__span SD
-      //-               p.guide-list__bottom Sour Diesel
-      //-     .guide-bottom
-      //-       ul.guide-list-bottom
-      //-         li.guide-list-bottom__item  
-      //-           img.guide-list-bottom__img(src="img/guide-cannabis.png", alt="cannabis")
-      //-           .guide-list-item-right
-      //-             .guide-list-item-right__top
-      //-               .guide-list-item-right__images  
-      //-                 span.guide-list-item-right__span
-      //-                   svg(width="14" height="16")
-      //-                     use(href="img/icons/icons.svg#guide-cannabis")
-      //-                 span.guide-list-item-right__span
-      //-                   svg(width="14" height="16")
-      //-                     use(href="img/icons/icons.svg#guide-cannabis")
-      //-                 span.guide-list-item-right__span
-      //-                   svg(width="14" height="16")
-      //-                     use(href="img/icons/icons.svg#guide-cannabis")
-      //-                 span.guide-list-item-right__span
-      //-                   svg(width="14" height="16")
-      //-                     use(href="img/icons/icons.svg#guide-cannabis")
-      //-                 span.guide-list-item-right__span
-      //-                   svg(width="14" height="16")
-      //-                     use(href="img/icons/icons.svg#guide-cannabis")
-      //-               .guide-list-item-right__review 5.00 <span class="guide-list-item-right__review--color">(3 reviews)</span>
-      //-             .guide-list-item-right__content-top
-      //-               h3.guide-list-item-right__title Mad Blast
-      //-               .guide-list-item-right__circle
-      //-                 span.guide-list-item-right__text MT
-      //-             .guide-list-item-right__content-bottom
-      //-               p.guide-list-item-right__text-content We are a Cannabis Dispensary – Family Owned & Opereated The major goal of family medicine is to build trust between the patient and the general paractitioner, which allow ahieving the best treatement outcome.
-      //-             .guide-list-item-right__content-price
-      //-               .guide-list-item-right__span-avability Avability: <span class="guide-list-item-right__span-avability--color">Instock</span>
-      //-               .guide-list-item-right__span-price Price: <span class="guide-list-item-right__span-price--color">&#36 45</span>
-      //-             button.btn.guide-list-item-right__btn(type="button") Add to Cart
-      //- //- PRODUCTS
-      //- section.products(id="products")
-      //-   .container
-      //-     .products-top
-      //-       h2.title.products-top__title Our <span class="title--color">products</span>
-      //-       p.text.products-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      //-       ul.products-top__list
-      //-         li.products-top__item
-      //-           button.btn.products-top__btn(type="button") Hybrid
-      //-         li.products-top__item
-      //-           button.btn.products-top__btn(type="button") Indica
-      //-         li.products-top__item
-      //-           button.btn.products-top__btn(type="button") Sativa
-      //-     ul.products-list-slider
-      //-       ul.products-list
-      //-         li.products-list__item
-      //-           img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr MB
-      //-             p.products-list__text Mad Blast
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr LB
-      //-             p.products-list__text Little Bloom
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr MT
-      //-             p.products-list__text Mix Tim
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr SD
-      //-             p.products-list__text Sour Diesel
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-       ul.products-list
-      //-         li.products-list__item
-      //-           img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr MB
-      //-             p.products-list__text Mad Blast
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr LB
-      //-             p.products-list__text Little Bloom
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr MT
-      //-             p.products-list__text Mix Tim
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr SD
-      //-             p.products-list__text Sour Diesel
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-       ul.products-list
-      //-         li.products-list__item
-      //-           img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr MB
-      //-             p.products-list__text Mad Blast
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr LB
-      //-             p.products-list__text Little Bloom
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr MT
-      //-             p.products-list__text Mix Tim
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-         li.products-list__item
-      //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
-      //-           .products-list__content
-      //-             p.products-list__abbr SD
-      //-             p.products-list__text Sour Diesel
-      //-             p.products-list__price price: 999
-      //-           button.btn.products-list__btn(type="button") Add to Cart
-      //-     a.btn.products__store(href="#") Visit store
-      //- //- TEAM
-      //- section.team
-      //-   .container
-      //-     h2.title.team__title Meet Our CBD Specialists
-      //-     ul.team-list
-      //-       li.team-list__item
-      //-         img.team-list__img(src="img/team-1.jpg", alt="girl")
-      //-         .team-list__content
-      //-           p.team-list__text Mia Brown 
-      //-       li.team-list__item
-      //-         img.team-list__img(src="img/team-2.jpg", alt="girl")
-      //-         .team-list__content
-      //-           p.team-list__text Oliver Johnson 
-      //-       li.team-list__item
-      //-         img.team-list__img(src="img/team-3.jpg", alt="girl")
-      //-         .team-list__content
-      //-           p.team-list__text James Smith 
-      //- //- UPDATE
-      //- section.update
-      //-   .container
-      //-     .update-top
-      //-       h2.title.update-top__title Get Every <span class="title--color">Latest Update</span>
-      //-       p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      //-     ul.update-list
-      //-       li.update-list__item
-      //-         img.update-list__img(src="img/gallery-3.jpg", alt="cannabis")
-      //-         .update-list__top
-      //-           span.update-list__date 26 January, 2022
-      //-         .update-list__bottom
-      //-           p.update-list__title Concentrates are products made from the cannabis
-      //-           p.update-list__text Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      //-         span.update-list__dots
-      //-       li.update-list__item
-      //-         img.update-list__img(src="img/gallery-4.jpg", alt="cannabis")
-      //-         .update-list__top
-      //-           span.update-list__date 26 January, 2022
-      //-         .update-list__bottom
-      //-           p.update-list__title Grow cannabis at farm with Weefly from the cannabis
-      //-           p.update-list__text Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      //-         span.update-list__dots
-      //-       li.update-list__item
-      //-         img.update-list__img(src="img/gallery-7.jpg", alt="cannabis")
-      //-         .update-list__top
-      //-           span.update-list__date 26 January, 2022
-      //-         .update-list__bottom
-      //-           p.update-list__title New cannabis laws free prisoners from the cannabis
-      //-           p.update-list__text Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      //-         span.update-list__dots
-      //- //- PRODUCE
-      //- section.produce
-        .container
-          .produce-top
-            h2.title.produce-top__title Our <span class="title--color">Daily Produce</span>
-            p.text.produce-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          ul.produce-list
-            li.produce-list__item
-              img.produce-list__img.produce-list__img--1(src="img/produce-1.png", alt="produce")
-              .produce-list__content
-                p.produce-list__title Oils
-                p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
-            li.produce-list__item
-              img.produce-list__img.produce-list__img--2(src="img/produce-2.png", alt="produce")
-              .produce-list__content
-                p.produce-list__title Edibles
-                p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
-            li.produce-list__item
-              img.produce-list__img.produce-list__img--3(src="img/produce-3.png", alt="produce")
-              .produce-list__content
-                p.produce-list__title Seeds
-                p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
-            li.produce-list__item
-              img.produce-list__img.produce-list__img--4(src="img/produce-4.png", alt="produce")
-              .produce-list__content
-                p.produce-list__title Plants 
-                p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
-    //- include html/footer
+    .wrapper
+      include html/header
+      main
+        //- HERO
+        //- section.hero(id="main")
+        //-   .container
+        //-     .hero-content
+        //-       .hero-top
+        //-         h1.hero-top__title Cannabis Also Know As GoodWeed Among Names
+        //-         p.hero-top__text We are a Cannabis Dispensary – Family Owned & Opereated The major goal of family medicine is to build trust between the
+        //-       .hero-bottom
+        //-         a.btn.hero-bottom__before(href="#") Explore
+        //-         a.btn.hero-bottom__after(href="#") Intro video
+        //-           svg.hero-bottom__arrow(width="17" height="19")
+        //-             use(href="img/icons/icons.svg#hero-arrow") 
+        //- //- SERVICE
+        //- section.service(id="services")
+        //-   .container
+        //-     .service-top
+        //-       h2.title Our services
+        //-       p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //-     ul.service-list
+        //-       li.service-list__item
+        //-         .service-list__top
+        //-           svg.service-list__svg(width="46" height="65")
+        //-             use(href="img/icons/icons.svg#service-1")
+        //-         .service-list__bottom
+        //-           h3.title.service-list__title Quality
+        //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur
+        //-       li.service-list__item
+        //-         .service-list__top
+        //-           svg.service-list__svg(width="70" height="49")
+        //-             use(href="img/icons/icons.svg#service-2")
+        //-         .service-list__bottom
+        //-           h3.title.service-list__title Delivery
+        //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur
+        //-       li.service-list__item
+        //-         .service-list__top
+        //-           svg.service-list__svg(width="52" height="55")
+        //-             use(href="img/icons/icons.svg#service-3")
+        //-         .service-list__bottom
+        //-           h3.title.service-list__title Natural
+        //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur
+        //-       li.service-list__item
+        //-         .service-list__top
+        //-           svg.service-list__svg(width="60" height="60")
+        //-             use(href="img/icons/icons.svg#service-4")
+        //-         .service-list__bottom
+        //-           h3.title.service-list__title Trusted 
+        //-           p.service-list__text Lorem ipsum dolor sit amet, consectetur 
+        //- //- GALLERY
+        //- section.gallery(id="gallery")
+        //-   .gallery-top
+        //-     h2.title.gallery-top__title Our Photo <span class="title--color">Gallery</span>
+        //-     p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //-   .gallery-bottom-slider
+        //-     .gallery-bottom 
+        //-       .gallery-bottom__wrap
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
+        //-         .gallery-bottom__center
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+        //-       .gallery-bottom__wrap
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
+        //-         .gallery-bottom__center
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+        //-     .gallery-bottom 
+        //-       .gallery-bottom__wrap
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
+        //-         .gallery-bottom__center
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+        //-       .gallery-bottom__wrap
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
+        //-         .gallery-bottom__center
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
+        //-           img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
+        //-         img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+        //- //- GUIDE
+        //- section.guide
+        //-   .container
+        //-     .guide-top
+        //-       h2.title.guide-top__title The Guide Is To Familiarize You <span class="title--color">With GoodWeed</span>
+        //-       ul.guide-list
+        //-         li.guide-list__item
+        //-           label.guide-list__label(for="radio-1")
+        //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-1" checked)
+        //-             .guide-list__content
+        //-               p.guide-list__top Oils
+        //-               span.guide-list__span FF
+        //-               p.guide-list__bottom Florida’s Finest
+        //-         li.guide-list__item
+        //-           label.guide-list__label(for="radio-2")
+        //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-2" checked)
+        //-             .guide-list__content
+        //-               p.guide-list__top Buds
+        //-               span.guide-list__span LB
+        //-               p.guide-list__bottom Little Bloom
+        //-         li.guide-list__item
+        //-           label.guide-list__label(for="radio-3")
+        //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-3" checked)
+        //-             .guide-list__content
+        //-               p.guide-list__top Oils
+        //-               span.guide-list__span MB
+        //-               p.guide-list__bottom Mad Blast
+        //-         li.guide-list__item
+        //-           label.guide-list__label(for="radio-4")
+        //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-4" checked)
+        //-             .guide-list__content
+        //-               p.guide-list__top Hybrid
+        //-               span.guide-list__span MT
+        //-               p.guide-list__bottom Mix Tim
+        //-         li.guide-list__item
+        //-           label.guide-list__label(for="radio-5")
+        //-             input.guide-list__input(type="radio" name="radio-btn" id="radio-5" checked)
+        //-             .guide-list__content
+        //-               p.guide-list__top Edibles
+        //-               span.guide-list__span SD
+        //-               p.guide-list__bottom Sour Diesel
+        //-     .guide-bottom
+        //-       ul.guide-list-bottom
+        //-         li.guide-list-bottom__item  
+        //-           img.guide-list-bottom__img(src="img/guide-cannabis.png", alt="cannabis")
+        //-           .guide-list-item-right
+        //-             .guide-list-item-right__top
+        //-               .guide-list-item-right__images  
+        //-                 span.guide-list-item-right__span
+        //-                   svg(width="14" height="16")
+        //-                     use(href="img/icons/icons.svg#guide-cannabis")
+        //-                 span.guide-list-item-right__span
+        //-                   svg(width="14" height="16")
+        //-                     use(href="img/icons/icons.svg#guide-cannabis")
+        //-                 span.guide-list-item-right__span
+        //-                   svg(width="14" height="16")
+        //-                     use(href="img/icons/icons.svg#guide-cannabis")
+        //-                 span.guide-list-item-right__span
+        //-                   svg(width="14" height="16")
+        //-                     use(href="img/icons/icons.svg#guide-cannabis")
+        //-                 span.guide-list-item-right__span
+        //-                   svg(width="14" height="16")
+        //-                     use(href="img/icons/icons.svg#guide-cannabis")
+        //-               .guide-list-item-right__review 5.00 <span class="guide-list-item-right__review--color">(3 reviews)</span>
+        //-             .guide-list-item-right__content-top
+        //-               h3.guide-list-item-right__title Mad Blast
+        //-               .guide-list-item-right__circle
+        //-                 span.guide-list-item-right__text MT
+        //-             .guide-list-item-right__content-bottom
+        //-               p.guide-list-item-right__text-content We are a Cannabis Dispensary – Family Owned & Opereated The major goal of family medicine is to build trust between the patient and the general paractitioner, which allow ahieving the best treatement outcome.
+        //-             .guide-list-item-right__content-price
+        //-               .guide-list-item-right__span-avability Avability: <span class="guide-list-item-right__span-avability--color">Instock</span>
+        //-               .guide-list-item-right__span-price Price: <span class="guide-list-item-right__span-price--color">&#36 45</span>
+        //-             button.btn.guide-list-item-right__btn(type="button") Add to Cart
+        //- //- PRODUCTS
+        //- section.products(id="products")
+        //-   .container
+        //-     .products-top
+        //-       h2.title.products-top__title Our <span class="title--color">products</span>
+        //-       p.text.products-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //-       ul.products-top__list
+        //-         li.products-top__item
+        //-           button.btn.products-top__btn(type="button") Hybrid
+        //-         li.products-top__item
+        //-           button.btn.products-top__btn(type="button") Indica
+        //-         li.products-top__item
+        //-           button.btn.products-top__btn(type="button") Sativa
+        //-     ul.products-list-slider
+        //-       ul.products-list
+        //-         li.products-list__item
+        //-           img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr MB
+        //-             p.products-list__text Mad Blast
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr LB
+        //-             p.products-list__text Little Bloom
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr MT
+        //-             p.products-list__text Mix Tim
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr SD
+        //-             p.products-list__text Sour Diesel
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-       ul.products-list
+        //-         li.products-list__item
+        //-           img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr MB
+        //-             p.products-list__text Mad Blast
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr LB
+        //-             p.products-list__text Little Bloom
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr MT
+        //-             p.products-list__text Mix Tim
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr SD
+        //-             p.products-list__text Sour Diesel
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-       ul.products-list
+        //-         li.products-list__item
+        //-           img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr MB
+        //-             p.products-list__text Mad Blast
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr LB
+        //-             p.products-list__text Little Bloom
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr MT
+        //-             p.products-list__text Mix Tim
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-         li.products-list__item
+        //-           img.products-list__img(src="img/products-3.png", alt="cannabis")
+        //-           .products-list__content
+        //-             p.products-list__abbr SD
+        //-             p.products-list__text Sour Diesel
+        //-             p.products-list__price price: 999
+        //-           button.btn.products-list__btn(type="button") Add to Cart
+        //-     a.btn.products__store(href="#") Visit store
+        //- //- TEAM
+        //- section.team
+        //-   .container
+        //-     h2.title.team__title Meet Our CBD Specialists
+        //-     ul.team-list
+        //-       li.team-list__item
+        //-         img.team-list__img(src="img/team-1.jpg", alt="girl")
+        //-         .team-list__content
+        //-           p.team-list__text Mia Brown 
+        //-       li.team-list__item
+        //-         img.team-list__img(src="img/team-2.jpg", alt="girl")
+        //-         .team-list__content
+        //-           p.team-list__text Oliver Johnson 
+        //-       li.team-list__item
+        //-         img.team-list__img(src="img/team-3.jpg", alt="girl")
+        //-         .team-list__content
+        //-           p.team-list__text James Smith 
+        //- //- UPDATE
+        //- section.update
+        //-   .container
+        //-     .update-top
+        //-       h2.title.update-top__title Get Every <span class="title--color">Latest Update</span>
+        //-       p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //-     ul.update-list
+        //-       li.update-list__item
+        //-         img.update-list__img(src="img/gallery-3.jpg", alt="cannabis")
+        //-         .update-list__top
+        //-           span.update-list__date 26 January, 2022
+        //-         .update-list__bottom
+        //-           p.update-list__title Concentrates are products made from the cannabis
+        //-           p.update-list__text Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //-         span.update-list__dots
+        //-       li.update-list__item
+        //-         img.update-list__img(src="img/gallery-4.jpg", alt="cannabis")
+        //-         .update-list__top
+        //-           span.update-list__date 26 January, 2022
+        //-         .update-list__bottom
+        //-           p.update-list__title Grow cannabis at farm with Weefly from the cannabis
+        //-           p.update-list__text Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //-         span.update-list__dots
+        //-       li.update-list__item
+        //-         img.update-list__img(src="img/gallery-7.jpg", alt="cannabis")
+        //-         .update-list__top
+        //-           span.update-list__date 26 January, 2022
+        //-         .update-list__bottom
+        //-           p.update-list__title New cannabis laws free prisoners from the cannabis
+        //-           p.update-list__text Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //-         span.update-list__dots
+        //- //- PRODUCE
+        //- section.produce
+          .container
+            .produce-top
+              h2.title.produce-top__title Our <span class="title--color">Daily Produce</span>
+              p.text.produce-top__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            ul.produce-list
+              li.produce-list__item
+                img.produce-list__img.produce-list__img--1(src="img/produce-1.png", alt="produce")
+                .produce-list__content
+                  p.produce-list__title Oils
+                  p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
+              li.produce-list__item
+                img.produce-list__img.produce-list__img--2(src="img/produce-2.png", alt="produce")
+                .produce-list__content
+                  p.produce-list__title Edibles
+                  p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
+              li.produce-list__item
+                img.produce-list__img.produce-list__img--3(src="img/produce-3.png", alt="produce")
+                .produce-list__content
+                  p.produce-list__title Seeds
+                  p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
+              li.produce-list__item
+                img.produce-list__img.produce-list__img--4(src="img/produce-4.png", alt="produce")
+                .produce-list__content
+                  p.produce-list__title Plants 
+                  p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
+      include html/footer
     script(src="js/app.min.js")
 

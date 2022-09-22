@@ -377,6 +377,16 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+body.header-menu-open {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 
 .container-header {
   max-width: 1300px;
@@ -1211,6 +1221,13 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .footer-top__link {
   display: flex;
   align-items: center;
@@ -1224,7 +1241,20 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
+  flex-wrap: wrap;
   gap: 35px;
+}
+@media screen and (max-width: 768px) {
+  .footer-top__list {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-top__list {
+    margin-left: 0;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 .footer-top__soc {
   width: 30px;
@@ -1234,6 +1264,16 @@ body {
   justify-content: center;
   transition: 250ms linear;
   border-radius: 50%;
+}
+@media screen and (max-width: 480px) {
+  .footer-top__soc {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-top__soc .footer-top__svg {
+    width: 25px;
+    height: 25px;
+  }
 }
 .footer-top__soc:hover, .footer-top__soc:focus {
   background-color: #ffffff;
@@ -1257,6 +1297,25 @@ body {
   align-items: flex-end;
   justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+.footer-bottom__text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000000;
+}
+@media screen and (max-width: 480px) {
+  .footer-bottom__text {
+    font-size: 18px;
+  }
+}
 .footer-bottom__title {
   font-family: "Zilla Slab", serif;
   font-style: normal;
@@ -1267,6 +1326,11 @@ body {
 }
 .footer-bottom__title:not(:last-child) {
   margin-bottom: 12px;
+}
+@media screen and (max-width: 480px) {
+  .footer-bottom__title {
+    font-size: 24px;
+  }
 }
 
 .footer-bottom-list {
@@ -1286,4 +1350,9 @@ body {
 .footer-bottom-list__link:hover, .footer-bottom-list__link:focus {
   color: #ffffff;
   transform: scale(1.05);
+}
+@media screen and (max-width: 480px) {
+  .footer-bottom-list__link {
+    font-size: 16px;
+  }
 }

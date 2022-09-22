@@ -5,6 +5,17 @@ body {
 
   color: $black;
   background-color: $white;
+
+  &.header-menu-open {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .container-header {
