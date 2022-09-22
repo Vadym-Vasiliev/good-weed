@@ -997,9 +997,6 @@ body.header-menu-open {
   display: none;
   color: #ffb800;
 }
-.products button {
-  display: none;
-}
 
 .products-top {
   margin-bottom: 73px;
@@ -1041,11 +1038,13 @@ body.header-menu-open {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  min-height: 424px;
 }
 .products-list__item {
   width: 200px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
   border-radius: 10px;
+  padding-bottom: 20px;
 }
 .products-list__img {
   width: 156px;
@@ -1080,7 +1079,6 @@ body.header-menu-open {
   width: 100%;
   padding: 14px 0;
   text-align: center;
-  margin-bottom: 35px;
   transition: 250ms linear;
   color: #ffb800;
 }
@@ -1091,6 +1089,34 @@ body.header-menu-open {
 
 .products .slick-arrow {
   display: none !important;
+}
+
+.products .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 45%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.products [id=slick-slide-control10],
+.products [id=slick-slide-control11],
+.products [id=slick-slide-control12] {
+  border: none;
+  font-size: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  transition: 250ms linear;
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.products .slick-active [id=slick-slide-control10],
+.products .slick-active [id=slick-slide-control11],
+.products .slick-active [id=slick-slide-control12] {
+  background-color: green;
 }
 
 .team {
