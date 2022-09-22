@@ -7,3 +7,11 @@ burgerBtn.addEventListener("click", () => {
   burgerMenu.classList.toggle("header-menu--open");
   document.body.classList.toggle("header-menu-open");
 });
+
+burgerListItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    burgerBtn.classList.remove("header-burger--open");
+    burgerMenu.classList.remove("header-menu--open");
+    document.body.classList.remove("header-menu-open");
+  });
+});

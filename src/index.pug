@@ -56,33 +56,34 @@ html
           .gallery-top
             h2.title.gallery-top__title Our Photo <span class="title--color">Gallery</span>
             p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          .gallery-bottom-slider
-            .gallery-bottom 
-              .gallery-bottom__wrap
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
-                .gallery-bottom__center
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
-              .gallery-bottom__wrap
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
-                .gallery-bottom__center
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
-            .gallery-bottom 
-              .gallery-bottom__wrap
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
-                .gallery-bottom__center
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
-              .gallery-bottom__wrap
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
-                .gallery-bottom__center
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
-                  img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
-                img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+          .swiper.gallery-bottom-slider
+            .swiper-wrapper
+              .swiper-slide.gallery-bottom 
+                .gallery-bottom__wrap
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
+                  .gallery-bottom__center
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+                .gallery-bottom__wrap
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
+                  .gallery-bottom__center
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
+              .swiper-slide.gallery-bottom 
+                .gallery-bottom__wrap
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-1.jpg", alt="the girl smokes")
+                  .gallery-bottom__center
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-2.jpg", alt="cannabis")
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-3.jpg", alt="cannabis")
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-4.jpg", alt="cannabis")
+                .gallery-bottom__wrap
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-5.jpg", alt="the man smokes")
+                  .gallery-bottom__center
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-6.jpg", alt="cannabis")
+                    img.gallery-bottom__img.gallery-bottom__img--small(src="img/gallery-7.jpg", alt="cannabis")
+                  img.gallery-bottom__img.gallery-bottom__img--big(src="img/gallery-8.jpg", alt="cannabis")
         //- GUIDE
         section.guide
           .container
@@ -170,95 +171,66 @@ html
                   button.btn.products-top__btn(type="button") Indica
                 li.products-top__item
                   button.btn.products-top__btn(type="button") Sativa
-            ul.products-list-slider
-              ul.products-list
-                li.products-list__item
-                  img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr MB
-                    p.products-list__text Mad Blast
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr LB
-                    p.products-list__text Little Bloom
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr MT
-                    p.products-list__text Mix Tim
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr SD
-                    p.products-list__text Sour Diesel
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-              ul.products-list
-                li.products-list__item
-                  img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr MB
-                    p.products-list__text Mad Blast
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr LB
-                    p.products-list__text Little Bloom
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr MT
-                    p.products-list__text Mix Tim
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr SD
-                    p.products-list__text Sour Diesel
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-              ul.products-list
-                li.products-list__item
-                  img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr MB
-                    p.products-list__text Mad Blast
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr LB
-                    p.products-list__text Little Bloom
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr MT
-                    p.products-list__text Mix Tim
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-                li.products-list__item
-                  img.products-list__img(src="img/products-3.png", alt="cannabis")
-                  .products-list__content
-                    p.products-list__abbr SD
-                    p.products-list__text Sour Diesel
-                    p.products-list__price price: 999
-                  button.btn.products-list__btn(type="button") Add to Cart
-            a.btn.products__store(href="#") Visit store
+              .swiper.products-list-slider
+                .swiper-wrapper.products-list
+                  .swiper-slide.products-list__item
+                    img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr MB
+                      p.products-list__text Mad Blast
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                  .swiper-slide.products-list__item
+                    img.products-list__img(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr LB
+                      p.products-list__text Little Bloom
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                  .swiper-slide.products-list__item
+                    img.products-list__img(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr MT
+                      p.products-list__text Mix Tim
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                  .swiper-slide.products-list__item
+                    img.products-list__img(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr SD
+                      p.products-list__text Sour Diesel
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                  .swiper-slide.products-list__item
+                    img.products-list__img.products-list__img--width(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr MB
+                      p.products-list__text Mad Blast
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                  .swiper-slide.products-list__item
+                    img.products-list__img(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr LB
+                      p.products-list__text Little Bloom
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                  .swiper-slide.products-list__item
+                    img.products-list__img(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr MT
+                      p.products-list__text Mix Tim
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                  .swiper-slide.products-list__item
+                    img.products-list__img(src="img/products-3.png", alt="cannabis")
+                    .products-list__content
+                      p.products-list__abbr SD
+                      p.products-list__text Sour Diesel
+                      p.products-list__price price: 999
+                    button.btn.products-list__btn(type="button") Add to Cart
+                .swiper-pagination
+              a.btn.products__store(href="#") Visit store
         //- TEAM
         section.team
           .container
@@ -335,5 +307,23 @@ html
                   p.produce-list__title Plants 
                   p.text.produce-list__text Lorem ipsum dolor sit amet, consectetur 
       include html/footer
+      .popup
+        .popup__body
+          button(type="button").popup__btn
+            span.popup__span
+          .popup-left
+          .popup-right
+            form.popup-right__form
+              label.popup-right__label
+                input.popup-right__input(type="text" text="name" placeholder="Walter White")
+              label.popup-right__label
+                input.popup-right__input(type="email" text="email" placeholder="WalterWhite@gmail.com")
+              label.popup-right__label
+                input.popup-right__input(required type="text" text="number" placeholder="Card Number")
+              label.popup-right__label
+                input.popup-right__input(required type="text" text="number" placeholder="12/23")
+              label.popup-right__label
+                input.popup-right__input(required type="text" text="number" placeholder="CVV")
+              button.btn.popup-right__btn(type="submit") to buy
     script(src="js/app.min.js")
 
