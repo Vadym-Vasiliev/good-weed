@@ -54,11 +54,16 @@
   }
 }
 
-.products-list {
+.products-list-slider {
   display: flex;
+  min-height: 333px;
+}
+
+.products-list {
+  display: flex !important;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
+  align-items: center;
+  gap: 20px;
 
   &__item {
     width: 200px;
@@ -116,4 +121,11 @@
       background-color: $yellow;
     }
   }
+}
+
+.products .slick-arrow {
+  display: none !important;
+}
+
+.products .slick-next {
 }

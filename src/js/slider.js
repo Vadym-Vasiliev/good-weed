@@ -7,4 +7,7 @@ $(".gallery-bottom-slider").slick({
   speed: 30000,
 });
 
-$(".products-list").slick({});
+$(".products-list-slider").slick({
+  dots: true,
+  speed: 1500,
+});
