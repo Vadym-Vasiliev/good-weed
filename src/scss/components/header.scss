@@ -14,6 +14,7 @@
 .header-content {
   display: flex;
   align-items: center;
+  gap: 10px;
 
   &__link {
     display: flex;
@@ -28,6 +29,103 @@
   }
 }
 
+.header-burger {
+  position: relative;
+  border: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: auto;
+  z-index: 5;
+  display: none;
+
+  background-color: transparent;
+
+  &--open {
+    .header-burger__span {
+      height: 0;
+    }
+    .header-burger__span::before {
+      transform: rotate(-45deg);
+      margin-top: 0;
+
+      background-color: $green;
+    }
+
+    .header-burger__span::after {
+      transform: rotate(45deg);
+      margin-top: 0;
+
+      background-color: $green;
+    }
+  }
+
+  @include mobile {
+    display: block;
+  }
+
+  &__span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 3px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: block;
+
+    background-color: $white;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 3px;
+      border-radius: 10px;
+      margin-top: 8px;
+      display: block;
+      transition: 250ms linear;
+
+      background-color: $white;
+    }
+
+    &::after {
+      margin-top: 8px;
+    }
+    &::before {
+      margin-top: -8px;
+    }
+  }
+}
+
+.header-menu {
+  margin-left: auto;
+  @include mobile {
+    display: none;
+  }
+
+  &--open {
+    @include mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 5;
+
+      background-color: rgba(0, 0, 0, 0.75);
+
+      .header-list {
+        flex-direction: column;
+        margin-top: 150px;
+        gap: 38px;
+      }
+    }
+  }
+}
+
 .header-list {
   display: flex;
   align-items: center;
@@ -36,11 +134,19 @@
   margin-left: auto;
   flex-wrap: wrap;
 
+  @include tablet-768 {
+    column-gap: 54px;
+  }
+
   &__link {
     position: relative;
     font-weight: 500;
 
     color: $white;
+
+    @include mobile {
+      font-size: 28px;
+    }
 
     &::after {
       content: "";
@@ -63,11 +169,25 @@
   }
 }
 
+.header-wrapper {
+  margin-left: auto;
+  @include mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+
 .header-right {
   display: flex;
   align-items: center;
   gap: 32px;
-  margin-left: auto;
+  margin-left: 20px;
+
+  @include mobile {
+    margin-left: 10px;
+  }
 
   &__link {
     transition: 250ms linear;
@@ -83,5 +203,10 @@
   &__svg {
     transition: 250ms linear;
     fill: $white;
+
+    @include mobile {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
