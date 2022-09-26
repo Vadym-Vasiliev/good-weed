@@ -312,6 +312,20 @@ html
           button(type="button").popup__btn
             span.popup__span
           .popup-left
+            ul.popup-left-list
+              li.popup-left-list__item
+                a.popup-left-list__delete(href="#") 
+                  svg.popup-left-list__svg(width="15" height="17")
+                    use(href="img/icons/icons.svg#delete")
+                .popup-left-list__img
+                  img(src="img/products-3.png", alt="cannabis")
+                .popup-left-list__content
+                  .popup-left-list__abbr
+                    p MT
+                  .popup-left-list__text
+                    p Mix Tim
+                  .popup-left-list__price
+                    p price: 999
           .popup-right
             form.popup-right__form
               label.popup-right__label
@@ -319,7 +333,7 @@ html
               label.popup-right__label
                 input.popup-right__input(type="email" text="email" placeholder="WalterWhite@gmail.com")
               label.popup-right__label
-                input.popup-right__input(required type="text" text="number" placeholder="Card Number")
+                input.popup-right__input(required type="text" text="number" placeholder="2221 0012 3412 3456")
               label.popup-right__label
                 input.popup-right__input(required type="text" text="number" placeholder="12/23")
               label.popup-right__label
