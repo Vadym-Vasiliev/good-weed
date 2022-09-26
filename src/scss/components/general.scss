@@ -6,7 +6,7 @@ body {
   color: $black;
   background-color: $white;
 
-  &.header-menu-open {
+  &.header-menu-open.popup-form-open {
     overflow: hidden;
   }
 }
