@@ -24,6 +24,9 @@
   "dependencies": {
     "gulp-cli": "^2.3.0",
     "jquery": "^3.6.1",
+    "navigation": "^6.1.0",
+    "pagination": "^0.4.6",
+    "parcel-bundler": "^1.12.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.4.2"
   },
