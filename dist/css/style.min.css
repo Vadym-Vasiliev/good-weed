@@ -1379,6 +1379,12 @@ body.header-menu-open.popup-form-open {
   transition: 250ms linear;
   background-color: transparent;
 }
+@media screen and (max-width: 480px) {
+  .popup__btn {
+    top: 5px;
+    right: 5px;
+  }
+}
 .popup__btn:hover, .popup__btn:focus {
   transform: scale(1.05);
 }
@@ -1388,6 +1394,13 @@ body.header-menu-open.popup-form-open {
   background-color: green;
 }
 @media screen and (max-width: 768px) {
+  .popup__btn:hover .popup__span::after,
+.popup__btn:hover .popup__span::before, .popup__btn:focus .popup__span::after,
+.popup__btn:focus .popup__span::before {
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 480px) {
   .popup__btn:hover .popup__span::after,
 .popup__btn:hover .popup__span::before, .popup__btn:focus .popup__span::after,
 .popup__btn:focus .popup__span::before {
@@ -1404,6 +1417,7 @@ body.header-menu-open.popup-form-open {
   display: block;
   border-radius: 10px;
   height: 0;
+  z-index: 1;
   background-color: #6ecb9e;
 }
 .popup__span::after, .popup__span::before {
