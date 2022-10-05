@@ -98,6 +98,7 @@
 }
 
 .popup-left {
+  position: relative;
   width: 60%;
   min-height: 100%;
   border-radius: 10px 0 0 10px;
@@ -108,21 +109,52 @@
     border-radius: 10px 10px 0 0;
     width: 100%;
   }
+
+  &__text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    display: block;
+
+    @include tablet-768 {
+      left: 50%;
+      bottom: 530px;
+    }
+  }
 }
 
 .popup-left-list {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 24px;
   overflow: scroll;
-  height: 100%;
+  max-height: 100%;
   padding: 30px;
+
+  @include desktop-1280 {
+    justify-content: center;
+  }
+
+  @include tablet-1024 {
+    justify-content: center;
+  }
+  @include tablet-768 {
+    justify-content: center;
+  }
+  @include mobile {
+    justify-content: center;
+  }
 
   &__item {
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 300px;
+    width: 300px;
     border-radius: 10px;
 
     box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
@@ -140,6 +172,13 @@
     right: 10px;
     top: 10px;
     transition: 250ms linear;
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+
+    background-color: transparent;
 
     &:hover,
     &:focus {
@@ -186,6 +225,7 @@
 }
 
 .popup-right {
+  position: relative;
   min-height: 100%;
   border-radius: 0 10px 10px 0;
   padding: 30px;

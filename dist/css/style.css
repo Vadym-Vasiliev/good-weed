@@ -511,6 +511,7 @@ body.header-menu-open.popup-form-open {
 }
 
 .header-right {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -539,6 +540,13 @@ body.header-menu-open.popup-form-open {
     width: 25px;
     height: 25px;
   }
+}
+.header-right__span {
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+  font-size: 12px;
+  color: rgb(0, 255, 0);
 }
 
 .hero {
@@ -1419,6 +1427,7 @@ body.header-menu-open.popup-form-open {
 }
 
 .popup-left {
+  position: relative;
   width: 60%;
   min-height: 100%;
   border-radius: 10px 0 0 10px;
@@ -1430,20 +1439,57 @@ body.header-menu-open.popup-form-open {
     width: 100%;
   }
 }
+.popup-left__text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .popup-left__text {
+    left: 50%;
+    bottom: 530px;
+  }
+}
 
 .popup-left-list {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 24px;
   overflow: scroll;
-  height: 100%;
+  max-height: 100%;
   padding: 30px;
+}
+@media screen and (max-width: 1280px) {
+  .popup-left-list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .popup-left-list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popup-left-list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .popup-left-list {
+    justify-content: center;
+  }
 }
 .popup-left-list__item {
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 300px;
+  width: 300px;
   border-radius: 10px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
@@ -1458,6 +1504,12 @@ body.header-menu-open.popup-form-open {
   right: 10px;
   top: 10px;
   transition: 250ms linear;
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background-color: transparent;
 }
 .popup-left-list__delete:hover, .popup-left-list__delete:focus {
   transform: scale(1.2);
@@ -1494,6 +1546,7 @@ body.header-menu-open.popup-form-open {
 }
 
 .popup-right {
+  position: relative;
   min-height: 100%;
   border-radius: 0 10px 10px 0;
   padding: 30px;

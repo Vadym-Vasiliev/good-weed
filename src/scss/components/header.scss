@@ -180,6 +180,7 @@
 }
 
 .header-right {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -208,5 +209,14 @@
       width: 25px;
       height: 25px;
     }
+  }
+
+  &__span {
+    position: absolute;
+    bottom: -5px;
+    right: -15px;
+    font-size: 12px;
+
+    color: rgb(0, 255, 0);
   }
 }
