@@ -1603,21 +1603,16 @@ body.header-menu-open.popup-form-open {
     width: 230px;
   }
 }
-.popup-right__label {
-  max-width: 400px;
-  border: 2px solid rgba(110, 203, 158, 0.71);
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
 .popup-right__input {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   width: 390px;
-  border: none;
   border-radius: 10px;
   padding: 10px;
+  margin-bottom: 30px;
   transition: 250ms linear;
+  border: 2px solid rgba(110, 203, 158, 0.71);
   color: #777777;
   background-color: #ffffff;
 }
